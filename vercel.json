@@ -1,17 +1,17 @@
 {
     "rewrites": [
       {
-        "source": "/engmed-tsf",
+        "source": "/engmed-tsf1",
         "destination": "/first.html"
     
       },
            {
-        "source": "/sfmedi",
+        "source": "/sfmedi1",
         "destination": "/sfmedi.html"
     
       },
            {
-        "source": "/sfmedi-bg",
+        "source": "/sfmedi-bg1",
         "destination": "/sfmedibg.html"
     
       },
@@ -21,7 +21,7 @@
        
       },
          {
-        "source": "/sfmedi-unlock",
+        "source": "/sfmedi-unlock1",
         "destination": "/third.html"
        
       }
