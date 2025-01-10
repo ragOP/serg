@@ -11,6 +11,16 @@
     
       },
       {
+        "source": "/engchat1",
+        "destination": "/engchat1.html"
+    
+      },
+      {
+        "source": "/engchat25k",
+        "destination": "/engchat25k.html"
+    
+      },
+      {
         "source": "/",
         "destination": "/index.html"
        
