@@ -23,7 +23,7 @@
             Burial Protection Plan®
         </div>
         <div style="margin-bottom: 4px; font-family: Arial, Helvetica, sans-serif; background-color:#03b55f; text-align: center; font-size: 14px; padding: 8px 0; color: #fff;">
-            <em>22,578 Seniors Enrolled In Last 24 Hours!</em>
+            <em><span id="counter">22578</span> Seniors Enrolled In Last 24 Hours!</em>
         </div>
 
         <!-- Step messages will be displayed here when needed -->
@@ -40,7 +40,7 @@
                             style="color: #03b55f;"> $40,000</span> Burial Protection Plan! 
                     </b>
                 </div>
-                <img style="border: 4px solid#8c44f0; width: 95%; margin-left: 0%;" class="topic-img-middle-z" src="./sha.png" alt="head" />
+                <img style="width: 95%; margin-left: 0%; border-radius: 10px;" class="topic-img-middle-z" src="./sha.png" alt="head" />
                 <div style="margin-top: 10px; text-align: center; font-size: 16px; font-weight: 900;line-height: 20px; margin-bottom: 0;" class="main-des-5">
                     Checking your eligibility is very simple and takes just 60 seconds, simply answer the questions below to see if you qualify now.
                     <br /><br />
@@ -65,8 +65,8 @@ border-radius: 10px;
                     <span id="quizQuestion">1. Are you over 55?</span>
                 </div>
                 <div class="answer" id="answerOptions">
-                    <div style="border-radius: 20px; font-size: 20px;" class="answer-btn-5" onclick="handleQuizP()">YES, I’M 55 OR OLDER</div>
-                    <div style="border-radius: 20px; font-size: 20px;" class="answer-btn-5" onclick="handleQuizN()">NO, I’M 54 AND YOUNGER</div>
+                    <div style="border-radius: 25px; font-size: 24px;" class="answer-btn-5" onclick="handleQuizP()">YES, I’M 55 OR OLDER</div>
+                    <div style="border-radius: 25px; font-size: 24px;" class="answer-btn-5" onclick="handleQuizN()">NO, I’M 54 AND YOUNGER</div>
                 </div>
                 <p style="text-align: center;"><em>Takes only 60 seconds!</em></p>
             </div>
@@ -135,6 +135,15 @@ border-radius: 10px;
         const answerOptions = document.getElementById("answerOptions");
         const minutesEl = document.getElementById("minutes");
         const secondsEl = document.getElementById("seconds");
+        const counter = document.getElementById("counter");
+
+        setInterval(() => {
+            if (counter) { 
+                let previousNumber = parseInt(counter.innerText); 
+                let randomIncrement = Math.floor(Math.random() * 3) + 1;
+                counter.innerText = previousNumber + randomIncrement;
+            }
+        }, 1000);
 
         function handleQuizP() {
             if (quizQuestion === "Are you over the age of 64?") {
@@ -160,8 +169,8 @@ border-radius: 10px;
 
         function setYesNoOptions() {
             answerOptions.innerHTML = `
-                <div style="border-radius: 20px; font-size: 20px;" class="answer-btn-5" onclick="stepProcess('yes')">YES</div>
-                <div style="border-radius: 20px; font-size: 20px;" class="answer-btn-5" onclick="stepProcess('no')">NO</div>
+                <div style="border-radius: 20px; font-size: 24px;" class="answer-btn-5" onclick="stepProcess('yes')">YES</div>
+                <div style="border-radius: 20px; font-size: 24px;" class="answer-btn-5" onclick="stepProcess('no')">NO</div>
             `;
         }
 
