@@ -20,9 +20,10 @@
     <div>
         <div style="font-family: Arial, Helvetica, sans-serif;" class="top-sticky-blue-test2"
             id="top">
-            Burial Protection Plan®
+            <img style="width: 70%;" src="./loggo.png" alt="">
         </div>
-        <div style="margin-bottom: 4px; font-family: Arial, Helvetica, sans-serif; background-color:#03b55f; text-align: center; font-size: 14px; padding: 8px 0; color: #fff;">
+        <div style="margin-bottom: 4px; font-family: Arial, Helvetica, sans-serif; background-color:#03b55f; text-align: center; font-size: 14px; padding: 8px 0; color: #fff; display: flex; align-items: center; justify-content: center;">
+            <img style="width: 10%; margin-right: 5px;" src="./live.png" alt="">
             <em><span id="counter">22578</span> Seniors Enrolled In Last 24 Hours!</em>
         </div>
 
@@ -46,20 +47,23 @@
                     <br /><br />
                 </div>
                 <div style="margin-bottom: 20px; margin-top: -10px;"><i style="font-size: 24px;" class="fa-solid fa-angle-down"></i></div>
-                <div style="
-                background-color: #045ab6;
-                font-size: 14px;
-                padding: 15px 5px;
-                border-radius: 15px;
-                color: #fff;
-                box-shadow: 0px 5px 0px #03b55f;
-                margin-bottom: 7px;">
-                    ANSWER THE QUESTION BELOW TO PROCEED:</b>
+                <div style="background-color: #f1f1f1; height: 8vh;">
+                    <div style="
+                    background-color: #045ab6;
+                    font-size: 14px;
+                    padding: 15px 5px;
+                    border-radius: 15px;
+                    color: #fff;
+                    box-shadow: 0px 5px 0px #03b55f;
+                    margin-bottom: 5px;">
+                        ANSWER THE QUESTION BELOW TO PROCEED:</b>
+                    </div>
+                    
                 </div>
             </div>
 
             <div class="survey" style="background-color: #f1f1f1; padding: 30px 20px 1px 20px;
-border-radius: 10px;
+border-radius: 0px 0px 10px 10px;
             ">
                 <div class="quiz-5" id="btn" style="text-align: center;">
                     <span id="quizQuestion">1. Are you over 55?</span>
@@ -68,7 +72,7 @@ border-radius: 10px;
                     <div style="border-radius: 25px; font-size: 24px;" class="answer-btn-5" onclick="handleQuizP()">YES, I’M 55 OR OLDER</div>
                     <div style="border-radius: 25px; font-size: 24px;" class="answer-btn-5" onclick="handleQuizN()">NO, I’M 54 AND YOUNGER</div>
                 </div>
-                <p style="text-align: center;"><em>Takes only 60 seconds!</em></p>
+                <p style="text-align: center;"><em> <span id="claim">69</span> People Are Claiming Right Now!</em></p>
             </div>
         </div>
 
@@ -101,7 +105,7 @@ border-radius: 10px;
             </div>
         </div>
 
-        <div class="footer2">
+        <div class="footer2" style="margin-top: 25vh;">
             Beware of other fraudulent & similar-looking websites that might look exactly like ours, we have no affiliation with them. This is the only official website to claim your Burial Protection Plan with the domain name burialprotectionplan.org.
             <!-- <p>We represent Medicare Advantage HMO, PPO and PFFS organizations and stand-alone PDP prescription drug plans that are contracted with Medicare. Enrollment depends on the plan’s contract renewal."
             </p>
@@ -136,6 +140,7 @@ border-radius: 10px;
         const minutesEl = document.getElementById("minutes");
         const secondsEl = document.getElementById("seconds");
         const counter = document.getElementById("counter");
+        const claim = document.getElementById("claim");
 
         setInterval(() => {
             if (counter) { 
@@ -143,7 +148,15 @@ border-radius: 10px;
                 let randomIncrement = Math.floor(Math.random() * 3) + 1;
                 counter.innerText = previousNumber + randomIncrement;
             }
-        }, 1000);
+        }, 3000);
+
+        setInterval(() => {
+            if (claim) { 
+                let previousNumber = parseInt(claim.innerText); 
+                let randomIncrement = Math.floor(Math.random() * 1) + 1;
+                claim.innerText = previousNumber + randomIncrement;
+            }
+        }, 3000);
 
         function handleQuizP() {
             if (quizQuestion === "Are you over the age of 64?") {
