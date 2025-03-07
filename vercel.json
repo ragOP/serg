@@ -21,6 +21,16 @@
     
       },
       {
+        "source": "/engsf1",
+        "destination": "/latest.html"
+    
+      },
+      {
+        "source": "/engsf2",
+        "destination": "/friday.html"
+    
+      },
+      {
         "source": "/",
         "destination": "/index.html"
        
