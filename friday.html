@@ -47,20 +47,35 @@
 }
 @media screen and (max-width: 768px) {
     #lofo {
-        width: 55%;
+        width: 50%;
     }
 }
 </style>
 
 <body>
+    <style>
+        #image-container {
+            position: absolute;
+            top: 30px;
+            z-index: 10000;
+            width: 100%;
+            display: none;
+        }
+        #image-container img {
+            width: 100%;
+        }
+    </style>
+    <div id="image-container">
+        <img src="baarish.GIF" alt="" style="width: 100%;">
+    </div>
     <div>
-        <div style="font-family: Arial, Helvetica, sans-serif;" class="top-sticky-blue-test2"
+        <div style="font-family: Arial, Helvetica, sans-serif;" class="top-sticky-blue-test22"
             id="top">
             <img id="lofo" src="./loggo.png" alt="">
         </div>
-        <div style="margin-bottom: 4px; font-family: Arial, Helvetica, sans-serif; background-color:#03b55f; text-align: center; font-size: 14px; padding: 8px 0; color: #fff; display: flex; align-items: center; justify-content: center;">
+        <div style="margin-bottom: 4px; font-family: Arial, Helvetica, sans-serif; background-color:#03b55f; text-align: center; font-size: 13px; padding: 8px 0; color: #fff; display: flex; align-items: center; justify-content: center;">
             <img style="width: 10%; margin-right: 5px;" src="./live.png" alt="">
-            <em><span id="counter">22,578</span> Seniors Enrolled In Last 24 Hours!</em>
+            <em><span id="counter" style="font-weight: 800;">22,578</span> Seniors Enrolled In Last 24 Hours!</em>
         </div>
 
         <!-- Step messages will be displayed here when needed -->
@@ -77,7 +92,7 @@
                             style="color: #03b55f;"> $40,000</span> Burial Protection Plan! 
                     </b>
                 </div>
-                <img style="width: 95%; margin-left: 0%; border-radius: 10px;" class="topic-img-middle-z" src="./sf2.png" alt="head" />
+                <img style="width: 83%; margin-left: 0%; border-radius: 7px;" class="topic-img-middle-z" src="./sf2.png" alt="head" />
                 <div style="margin-top: 10px; text-align: center; font-size: 16px; font-weight: 900;line-height: 20px; margin-bottom: 0;" class="main-des-5">
                     Checking your eligibility is very simple and takes just 60 seconds, simply answer the questions below to see if you qualify now.
                     <br /><br />
@@ -114,11 +129,11 @@ border-radius: 0px 0px 10px 10px;
             </div>
         </div>
 
-        <!-- Congratulations message -->
+      
         <div class="checking hidden" id="congratulations">
-            <div class="congrats">Congratulations, You Qualify!</div>
-            <div class="top-description-5">
-                Make A <b>Quick Call</b> To Claim Your $25,000 Benefit!
+            <div class="congrats">Congratulations, You Qualify 🎉 </div>
+            <div class="top-description-5" >
+                Make A <b>Quick Call</b> To Claim Your <b>$40,000</b> Burial Protection Plan Now!
             </div>
             <div class="spots-count">Spots remaining: 4</div>
             <!-- <div class="tap-direction">👇 TAP BELOW TO CALL 👇</div> -->
@@ -179,6 +194,7 @@ border-radius: 0px 0px 10px 10px;
         const secondsEl = document.getElementById("seconds");
         const counter = document.getElementById("counter");
         const claim = document.getElementById("claim");
+        const imageContainer = document.getElementById("image-container")
 
         setInterval(() => {
             if (counter) { 
@@ -284,7 +300,11 @@ border-radius: 0px 0px 10px 10px;
 
             statusDiv.classList.add("hidden");
             congratulationsDiv.classList.remove("hidden");
+            imageContainer.style.display = 'block';
             startTimer();
+            setTimeout(() => {
+                imageContainer.style.display = 'none';
+            }, 2000)
             setTimeout(() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }, 100);
