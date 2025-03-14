@@ -30,6 +30,11 @@
         "destination": "/fab.html"
     
       },
+        {
+        "source": "/qualifyfb",
+        "destination": "/facebook.html"
+    
+      },
       {
         "source": "/engsf2",
         "destination": "/friday.html"
