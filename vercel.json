@@ -25,6 +25,11 @@
         "destination": "/latest.html"
     
       },
+         {
+        "source": "/qualify",
+        "destination": "/fab.html"
+    
+      },
       {
         "source": "/engsf2",
         "destination": "/friday.html"
