@@ -1,347 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      cc="true"
+      media="print"
+      onload="this.onload=null;this.media='all'"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      cc="true"
+      media="print"
+      onload="this.onload=null;this.media='all'"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      cc="true"
+      media="print"
+      onload="this.onload=null;this.media='all'"
+      href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benefits For Elderly</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-toastify/8.2.0/ReactToastify.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src=//b-js.ringba.com/CAfdb7eb5bdaa24fb8a155f293ece397ae async></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&amp;features=default,dom,es5,es6,es7,es2017,es2018,es2019,es2022,es2021,es2020,Blob,DOMTokenList.prototype.@@iterator,DOMTokenList.prototype.forEach,NodeList.prototype.@@iterator,NodeList.prototype.forEach,scroll,fetch,URLSearchParams,Element.prototype.scroll,Element.prototype.placeholder,Promise,Promise.prototype.finally,structuredClone"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      async=""
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    ></script>
+    <script
+      async=""
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
 
-  
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PKBQ2L5S');</script>
-        <!-- End Google Tag Manager -->
-
-
-
-
-
-    <style>
-        .hidden {
-            display: none;
-        }
-        .pulse {
-    animation: pulse 1s ease-in-out infinite;
-    background-color: #22c55e;
-    border-radius: 50%;
-    box-shadow: 0 0 8px #22c55e80;
-    height: 10px;
-    width: 10px;
-}
-@keyframes pulse {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.7;
-        transform: scale(1.2);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-#lofo {
-    width: 30%;
-}
-@media screen and (max-width: 768px) {
-    #lofo {
-        width: 50%;
-    }
-}
-</style>
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKBQ2L5S"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <style>
-        #image-container {
-            position: absolute;
-            top: 30px;
-            z-index: 10000;
-            width: 100%;
-            display: none;
-        }
-        #image-container img {
-            width: 100%;
-        }
-    </style>
-    <div id="image-container">
-        <img src="baarish.GIF" alt="" style="width: 100%;">
-    </div>
-    <div>
-        <div style="font-family: Arial, Helvetica, sans-serif;" class="top-sticky-blue-test22"
-            id="top">
-            <img id="lofo" src="./loggo.png" alt="">
-        </div>
-        <div style="margin-bottom: 4px; font-family: Arial, Helvetica, sans-serif; background-color:#03b55f; text-align: center; font-size: 13px; padding: 8px 0; color: #fff; display: flex; align-items: center; justify-content: center;">
-            <img style="width: 10%; margin-right: 5px;" src="./live.png" alt="">
-            <em><span id="counter" style="font-weight: 800;">22,578</span> Seniors Enrolled In Last 24 Hours!</em>
-        </div>
-
-        <!-- Step messages will be displayed here when needed -->
-        <div class="checking hidden" style="font-weight: 700;" id="status">
-            <span id="statusMessage"></span>
-        </div>
-
-        <!-- Main content of the survey -->
-        <div class="main-container-5" id="mainContent">
-            <div class="main-descrition-5-5">
-                <div class="main-des-title-6-7">
-                    <b>
-                        Final Call For Seniors To Claim Their  <span
-                            style="color: #03b55f;"> $40,000</span> Burial Protection Plan! 
-                    </b>
-                </div>
-                <img style="width: 83%; margin-left: 0%; border-radius: 7px;" class="topic-img-middle-z" src="./sha.png" alt="head" />
-                <div style="margin-top: 10px; text-align: center; font-size: 16px; font-weight: 900;line-height: 20px; margin-bottom: 0;" class="main-des-5">
-                    Checking your eligibility is very simple and takes just 60 seconds, simply answer the questions below to see if you qualify now.
-                    <br /><br />
-                </div>
-                <div style="margin-bottom: 20px; margin-top: -10px;"><i style="font-size: 24px;" class="fa-solid fa-angle-down"></i></div>
-                <div style="background-color: #f1f1f1; height: 60px;">
-                    <div style="
-                    background-color: #045ab6;
-                    font-size: 14px;
-                    padding: 15px 5px;
-                    border-radius: 15px;
-                    color: #fff;
-                    box-shadow: 0px 5px 0px #03b55f;
-                    margin-bottom: 5px;">
-                        ANSWER THE QUESTION BELOW TO PROCEED:</b>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="survey" style="background-color: #f1f1f1; padding: 3px 20px 1px 20px;
-border-radius: 0px 0px 10px 10px;
-            ">
-                <div class="quiz-5" id="btn" style="text-align: center;">
-                    <span id="quizQuestion">1. Are you over 55?</span>
-                </div>
-                <div class="answer" id="answerOptions">
-                    <div style="border-radius: 25px; font-size: 22px;" class="answer-btn-5" onclick="handleQuizP()">YES, I’M 55 OR OLDER</div>
-                    <div style="border-radius: 25px; font-size: 22px;" class="answer-btn-5" onclick="handleQuizN()">NO, I’M 54 AND YOUNGER</div>
-                </div>
-                <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
-                    <div class="pulse"></div><p style="text-align: center; margin-left: 10px;"></p><em> <span id="claim" style="color: #22c55e;">69</span> People Are Claiming Right Now!</em></p>
-                </div>
-            </div>
-        </div>
-
-      
-        <div class="checking hidden" id="congratulations">
-            <div class="congrats">Congratulations, You Qualify 🎉 </div>
-            <div class="top-description-5" >
-                Make A <b>Quick Call</b> To Claim Your <b>$40,000</b> Burial Protection Plan Now!
-            </div>
-            <div class="spots-count">Spots remaining: 4</div>
-            <!-- <div class="tap-direction">👇 TAP BELOW TO CALL 👇</div> -->
-            <div class="call-btn" onclick="handleCall()">
-                <a href="tel:+13214858035">
-                    <div className="call-btn" onClick={handleCall}> CALL (321) 485-8035
-                    </div>
-                </a>
-            </div>
-            <!-- <div class="sub-description">
-                Make sure to ask for medicare benefit for your area in order to receive the <b>Highest Possible Allowance.</b>
-            </div> -->
-            <!-- <div class="sub-title">We Have Reserved Your Spot</div> -->
-            <div class="sub-description">
-                Due to high call volume, your official agent is waiting for only <b>3 minutes</b>, then your spot will
-                not be reserved.
-            </div>
-            <div class="timer">
-                <div class="timer-cell" id="minutes">3</div>
-                <div class="timer-cell">:</div>
-                <div class="timer-cell" id="seconds">00</div>
-            </div>
-        </div>
-
-        <div class="footer2" style="margin-top: 25vh;">
-            Beware of other fraudulent & similar-looking websites that might look exactly like ours, we have no affiliation with them. This is the only official website to claim your Burial Protection Plan with the domain name burialprotectionplan.org.
-            <!-- <p>We represent Medicare Advantage HMO, PPO and PFFS organizations and stand-alone PDP prescription drug plans that are contracted with Medicare. Enrollment depends on the plan’s contract renewal."
-            </p>
-            <p>Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply.
-            </p>
-            <p>Enrollment in Medicare/Medicare Advantage may be limited to certain times of the year unless you qualify for a Special Enrollment Period
-
-            </p>
-            <p>americansbenefitschecker.com is not connected with or endorsed by the US government or Federal Medicare program. This website is a solicitation for insurance and Medicare Advantage, Part D or Medicare supplement insurance comparison services. Medicare supplement insurance is available to those age 65 or older enrolled in Medicare Parts A and B, and in some states to those under age 65 eligible to Medicare due to disability or end stage renal disease.
-            </p>
-            <p>We do not offer every plan available in your area. Currently we represent [insert number of organizations] organizations which offer [insert number of plans] products in your area. Please contact Medicare.gov, 1–800–MEDICARE, or your local State Health Insurance Program (SHIP) to get information on all of your options.</p> -->
-            <div class="terms2">
-                <a href="/terms.html">Terms & Conditions</a> |
-                <a href="/privacy.html">Privacy Policy</a>
-            </div>
-            <div style="width: 100%; height: 0.2px; background-color: black; margin-top: 15px;"></div>
-
-            <div class="copyright">
-                <!-- <p>G2 Licensed Agent : Gregory K. Teipelz</p>         -->
-            </div>
-        </div>
-    </div>
-
-    <script>
-        let step = "process";
-        let quizQuestion = "Are you over the age of 64?";
-        const statusDiv = document.getElementById("status");
-        const statusMessage = document.getElementById("statusMessage");
-        const congratulationsDiv = document.getElementById("congratulations");
-        const quizText = document.getElementById("quizQuestion");
-        const answerOptions = document.getElementById("answerOptions");
-        const minutesEl = document.getElementById("minutes");
-        const secondsEl = document.getElementById("seconds");
-        const counter = document.getElementById("counter");
-        const claim = document.getElementById("claim");
-        const imageContainer = document.getElementById("image-container")
-
-        setInterval(() => {
-            if (counter) { 
-            let previousNumber = parseInt(counter.innerText.replace(/,/g, '')); 
-            let randomIncrement = Math.floor(Math.random() * 3) + 1;
-            let newNumber = previousNumber + randomIncrement;
-            counter.innerText = newNumber.toLocaleString();
-            }
-        }, 3000);
-
-        setInterval(() => {
-            if (claim) { 
-                let previousNumber = parseInt(claim.innerText); 
-                let randomIncrement = Math.floor(Math.random() * 1) + 1;
-                claim.innerText = previousNumber + randomIncrement;
-            }
-        }, 3000);
-
-        function handleQuizP() {
-            if (quizQuestion === "Are you over the age of 64?") {
-                quizQuestion = "2. Do you live in the United States?";
-                quizText.textContent = quizQuestion;
-                setYesNoOptions();
-                smoothScrollToTop(1000, 432);
-            } else {
-                stepProcess("yes");
-            }
-        }
-
-        function handleQuizN() {
-            if (quizQuestion === "Are you over the age of 64?") {
-                quizQuestion = "2. Do you live in the United States?";
-                quizText.textContent = quizQuestion;
-                setYesNoOptions();
-                smoothScrollToTop(1000, 632);
-            } else {
-                stepProcess("no");
-            }
-        }
-
-        function setYesNoOptions() {
-            answerOptions.innerHTML = `
-                <div style="border-radius: 20px; font-size: 22px;" class="answer-btn-5" onclick="stepProcess('yes')">YES</div>
-                <div style="border-radius: 20px; font-size: 22px;" class="answer-btn-5" onclick="stepProcess('no')">NO</div>
-            `;
-        }
-
-        function smoothScrollToTop(duration, targetPosition = 0) {
-            const startPosition = window.pageYOffset;
-            const distance = targetPosition - startPosition;
-            let startTime = null;
-
-            function animation(currentTime) {
-                if (startTime === null) startTime = currentTime;
-                const timeElapsed = currentTime - startTime;
-                const run = ease(timeElapsed, startPosition, distance, duration);
-                window.scrollTo(0, run);
-                if (timeElapsed < duration) requestAnimationFrame(animation);
-            }
-
-            function ease(t, b, c, d) {
-                t /= d / 2;
-                if (t < 1) return (c / 2) * t * t + b;
-                t--;
-                return (-c / 2) * (t * (t - 2) - 1) + b;
-            }
-
-            requestAnimationFrame(animation);
-        }
-
-
-
-
-
-
-
-        const stepProcess = (answer) => {
-            smoothScrollToTop(1000);
-            const mainContent = document.getElementById("mainContent");
-            mainContent.classList.add("hidden");
-            statusDiv.classList.remove("hidden");
-            statusMessage.textContent = "Reviewing Your Answers...";
-
-            setTimeout(() => {
-                statusMessage.textContent = "Matching With Best Options...";
-                setTimeout(() => {
-                    statusMessage.textContent = "Confirming Eligibility...";
-                    setTimeout(() => {
-                        setStep("completed");
-                    }, 1500);
-                }, 1500);
-            }, 1500);
-        };
-
-        function setStep(newStep) {
-            step = newStep;
-            if (step === "completed") {
-                showCongratulations();
-            }
-        }
-
-        function showCongratulations() {
-
-            statusDiv.classList.add("hidden");
-            congratulationsDiv.classList.remove("hidden");
-            imageContainer.style.display = 'block';
-            startTimer();
-            setTimeout(() => {
-                imageContainer.style.display = 'none';
-            }, 2000)
-            setTimeout(() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }, 100);
-        }
-
-        function startTimer() {
-            let totalSeconds = 180;
-            const timer = setInterval(() => {
-                const minutes = Math.floor(totalSeconds / 60);
-                const seconds = totalSeconds % 60;
-                minutesEl.textContent = minutes;
-                secondsEl.textContent = seconds < 10 ? '0' + seconds : seconds;
-                totalSeconds--;
-
-                if (totalSeconds < 0) {
-                    clearInterval(timer);
-                }
-            }, 1000);
-        }
-
-        function handleCall() {
-            // Add any additional functionality for handling the call
-        }
+    <link rel="preconnect" cc="true" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      cc="true"
+      href="https://fonts.gstatic.com"
+      crossorigin=""
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
+      rel="preload"
+      cc="true"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <!-- This website was created in Funnelish. http://funnelish.com -->
+    <!-- Last Published: 2024-09-05 03:57:23 +0000 UTC -->
+    <!-- FAVICON -->
+    <link rel="icon" href="" />
+    <link rel="dns-prefetch" href="" />
+    <link rel="preconnect" href="" />
+    <link rel="preconnect" href="" />
+    <link rel="dns-prefetch" href="" />
+    <link rel="preconnect" href="" />
+    <link rel="preconnect" href="" />
+    <link rel="dns-prefetch" href="" />
+    <link rel="preload" href="" as="script" />
+    <link
+      rel="preload"
+      href="https://assets.checkoutchamp.com/Funnel/assets/styles/331bbb17-b1b8-4ff8-b61a-d2c7d069f906/4b509ce3-306d-473f-b1cd-bf2a1f1c1f59/core.min.css"
+      as="style"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="" />
+    <!-- Funnel -->
+    <!-- Products -->
+    <!-- Step -->
+    <!-- Apps Head -->
+    <link
+      async=""
+      rel="stylesheet"
+      href="https://assets.checkoutchamp.com/Funnel/assets/styles/331bbb17-b1b8-4ff8-b61a-d2c7d069f906/4b509ce3-306d-473f-b1cd-bf2a1f1c1f59/core.min.css"
+    />
+    <!-- Custom CSS -->
+    <!-- Funnel - Lazy Tracking Codes -->
+    <!-- Funnel - Custom Tracking Codes (Head) -->
+    <!-- Custom JS (Head) -->
+    <!-- begin Convert Experiences code-->
+    <!-- end Convert Experiences code -->
+    <!-- Taboola Pixel Code -->
+    <!-- End of Taboola Pixel Code -->
+    <!-- Pinterest Tag -->
+    <!-- end Pinterest Tag -->
+    <!--Microsoft Clarity-->
+    <script id="pageDataScript">
+      var pageData = {
+        pageViewReferenceId: "e1bab8fa-1f1f-4894-a614-76bdd2c58337",
+        funnelReferenceId: "a506dd4c-0b9b-439b-8465-e61abec73fc7",
+      };
     </script>
+<style>
+    body.dom-pending *{background-image:none!important}.jsc_center{justify-content:center!important}.timer_container{margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:10px}.timer_item{text-align:center;width:50px;padding:5px 0;background:#ffff;border-radius:4px}.timerTxt{font-size:11px;color:#000;font-weight:700;margin-top:4px;line-height:1}.timerNumber{font-size:20px;font-weight:700;color:red;line-height:1.2}.timer_colon{font-size:18px;font-weight:700;color:#ff0}.el-708300{align-items:center;flex-direction:row}.el-708300>.container-box:nth-child(1){width:unset;min-width:0;max-width:unset}.el-708300>.container-box:nth-child(2){width:30px;min-width:30px;max-width:30px}.el-708300>.container-box:nth-child(3){width:unset;min-width:0;max-width:unset}.el-372888{font-size:calc(14.6px + 8 * ((100vw - 320px)/ 960));text-align:center}.el-605220{align-items:start;flex-direction:row}.el-839026{align-items:center;flex-direction:row}.el-386690{font-size:25px;text-align:left}.el-662360{font-size:14px;text-align:center}.el-825553{align-items:start;flex-direction:row}.el-110852{align-items:flex-end}.el-762896{font-size:15px;text-align:left}.el-494266{font-size:20px;text-align:center}.el-918779{font-size:20px;text-align:center}.el-218139{font-size:20px;text-align:center}.el-624568{align-items:start;flex-direction:row}.el-561653{font-size:20px;text-align:center}.el-256521{font-size:16px;text-align:center}.el-153658{align-items:stretch;width:100%;align-self:center}.el-896878{align-items:start;flex-direction:row}.el-239939{font-size:18px;text-align:center}.el-954935{font-size:16px;text-align:center}.el-236968{align-items:start;flex-direction:row}.el-556004{align-items:center}.el-734722{align-items:center;flex-direction:row}.el-902295{align-items:center}.el-265123{font-size:13px;text-align:left}.el-159481{align-items:center;flex-direction:row}.el-826820{align-items:flex-start}.el-769152{font-size:13px;text-align:left}.el-779990{font-size:13px;text-align:left}.el-387019{align-items:start;flex-direction:row}.el-127009{align-items:center}.el-457528{align-items:center;flex-direction:row}.el-271071{align-items:center}.el-894811{font-size:13px;text-align:left}.el-448953{align-items:center;flex-direction:row}.el-670935{align-items:flex-start}.el-802446{font-size:13px;text-align:left}.el-816656{font-size:13px;text-align:left}.el-216282{align-items:start;flex-direction:row}.el-35068{align-items:center}.el-367607{align-items:center;flex-direction:row}.el-950285{align-items:center}.el-35305{font-size:13px;text-align:left}.el-620857{align-items:center;flex-direction:row}.el-576307{align-items:flex-start}.el-260929{font-size:13px;text-align:left}.el-15761{font-size:13px;text-align:left}.el-663791{font-size:16px;text-align:center}.el-439142{align-items:center;flex-direction:row}.el-454089{align-items:center}.el-502746{align-items:start;flex-direction:row}.el-629408{font-size:14px;text-align:left}.el-242942{align-items:center;flex-direction:row}.el-607112{align-items:center}.el-944699{align-items:start;flex-direction:row}.el-630965{font-size:14px;text-align:left}.el-853651{font-size:calc(12.5px + 8 * ((100vw - 320px)/ 960));text-align:center}.el-88459{font-size:calc(12.5px + 8 * ((100vw - 320px)/ 960));text-align:center}.paragraph{word-break:normal!important;white-space:normal!important;line-height:1em}[data-gjs-type=text][class*=gjs-selected]{outline:3px solid purple!important}[data-gjs-type=label][class*=gjs-selected]{outline:3px solid green!important}[data-gjs-type=input][class*=gjs-selected]{outline:3px solid green!important;border:none;box-shadow:none}#render-table{background-color:#fff;background-size:auto;background-repeat:no-repeat;padding:0;border-width:0;border-style:solid;border-color:transparent;color:#252a32;font-family:Poppins;font-size:14px}#\34 46699{margin:0;padding:0 5px 40px;background-size:auto;background-repeat:no-repeat}#\33 92011{border-width:0;border-style:solid;border-color:transparent;color:#303030;font-size:14px;text-align:initial;margin:0;padding:0 10px;background-size:auto;background-repeat:no-repeat}#\31 17753{margin:10px 0 0;padding:10px 10px 0;background-color:#fff}#i7nf34{font-size:large}#i3b8v1{text-align:left}#i942fk{margin:10px 10px 0;padding:0}#\31 9986{border-top:1px solid #ccc;border-left:none #ccc;border-right:none #ccc;border-bottom:none #ccc;margin:20px 0 0;padding:35px 15px;background-size:auto;background-repeat:no-repeat}#\39 60934{border-width:0;border-style:solid;border-color:transparent;color:#303030;font-size:14px;text-align:initial;margin:0;padding:0;background-size:auto;background-repeat:no-repeat}#bodyElementDummy{display:none}[data-gjs-type=paymentOption][class*=gjs-selected]{outline:3px solid green!important;border:none;box-shadow:none}#i744cq{text-align:right}#i5v40j{font-size:large}#\39 82310{padding:10px 15px;background-color:#000;background-size:auto;background-repeat:no-repeat}#\32 28850{border-width:0;border-style:solid;border-color:transparent;color:#303030;font-size:14px;text-align:initial;margin:0;padding:0;background-size:auto;background-repeat:no-repeat}#ia8p8{width:100%}#i9tfi{margin:0;padding:0;display:flex}#\33 72888{color:#ff0;line-height:120%;margin:0;padding:0;text-shadow:transparent 0 0 0!important;font-size:18px}#\34 16329{margin:0}#ick8d{border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px;border-top-left-radius:1px;border-top-right-radius:1px;border-bottom-left-radius:1px;border-bottom-right-radius:1px;flex:0 0}@font-face{font-family:poppins;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:poppins;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:poppins;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:poppins;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:roboto;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:roboto;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:roboto;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:roboto;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:roboto;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:roboto;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:roboto;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:roboto;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:roboto;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:roboto;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:roboto;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:roboto;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:roboto;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:roboto;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@media screen and (min-width:1024px){.el-372888{font-size:18px;text-align:center}.el-265123{font-size:14px;text-align:left}.el-769152{font-size:11px;text-align:left}.el-779990{font-size:14px;text-align:left}.el-894811{font-size:14px;text-align:left}.el-802446{font-size:11px;text-align:left}.el-816656{font-size:14px;text-align:left}.el-35305{font-size:14px;text-align:left}.el-260929{font-size:11px;text-align:left}.el-15761{font-size:14px;text-align:left}.el-439142{flex-direction:row}.el-242942{flex-direction:row}.el-853651{font-size:13px;text-align:center}.el-88459{font-size:13px;text-align:center}}@media (max-width:600px){.timer_container{gap:5px}.timer_item{width:35px;padding:4px 0}.timerNumber{font-size:16px}.timerTxt{font-size:9px;margin-top:2px}.kh_timer{justify-content:space-between!important}.kh_timer>.container-box:nth-child(2){width:10px!important;min-width:10px!important;max-width:10px!important}}@media screen and (min-width:480px){.el-372888{font-size:calc(18px + 8 * ((100vw - 320px)/ 960));text-align:center}.el-265123{font-size:14px;text-align:left}.el-769152{font-size:11px;text-align:left}.el-779990{font-size:14px;text-align:left}.el-894811{font-size:14px;text-align:left}.el-802446{font-size:11px;text-align:left}.el-816656{font-size:14px;text-align:left}.el-35305{font-size:14px;text-align:left}.el-260929{font-size:11px;text-align:left}.el-15761{font-size:14px;text-align:left}.el-439142{flex-direction:row}.el-242942{flex-direction:row}.el-853651{font-size:calc(11.3px + 8 * ((100vw - 320px)/ 960));text-align:center}.el-88459{font-size:calc(11.3px + 8 * ((100vw - 320px)/ 960));text-align:center}}@media (max-width:480px){.el-439142{align-items:center}.el-242942{align-items:center}#\31 17753{padding-left:0;padding-right:0}#\33 72888{font-size:16px}}
+</style>
+  
+  </head>
+  <body class="fk-web dom-pending">
+    <div
+      id="render-table"
+      href=""
+      data-secondsdelay=""
+      class="main_wrapper_main desktop_grid"
+    >
+      <main href="" class="main-wrapper">
+        <section
+          data-v-6bea8f81=""
+          data-eid="982310"
+          id="982310"
+          class="section full"
+        >
+          <div
+            data-v-4b3acc2c=""
+            data-v-6bea8f81=""
+            data-eid="228850"
+            id="228850"
+            data-secondsdelay=""
+            class="section_row"
+          >
+            <div
+              data-v-796cd32d=""
+              data-v-4b3acc2c=""
+              data-secondsdelay=""
+              id="ia8p8"
+              class="row-column"
+            >
+              <div
+                data-v-8eb46620=""
+                data-v-796cd32d=""
+                data-eid="708300"
+                data-secondsdelay=""
+                id="ixik3"
+                class="element-wrapper"
+              >
+                <div
+                  data-v-8eb46620=""
+                  id="708300"
+                  data-secondsdelay=""
+                  class="container-wrapper"
+                >
+                  <div
+                    data-secondsdelay=""
+                    id="i9tfi"
+                    class="container el-708300 fitContainer jsc_center kh_timer"
+                  >
+                    <div
+                      data-secondsdelay=""
+                      class="container-box cbox-708300-0"
+                    >
+                      <div
+                        data-v-8eb46620=""
+                        data-eid="372888"
+                        data-secondsdelay=""
+                        class="element-wrapper"
+                      >
+                        <div
+                          data-v-8eb46620=""
+                          id="372888"
+                          data-secondsdelay=""
+                          class="paragraph el-372888 sale_txt"
+                        >
+                          <div
+                            data-secondsdelay=""
+                            id="iq4cq"
+                            class="paragraph-inner"
+                          >
+                            <p id="ie1nf">
+                              <strong
+                                data-text="text"
+                                data-secondsdelay=""
+                                id="ick8d"
+                                >Buy 1 Get 1 Free Sales Ends Today!</strong
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      data-text="text"
+                      data-secondsdelay=""
+                      class="container-box cbox-708300-1"
+                    ></div>
+                    <div
+                      data-secondsdelay=""
+                      id="i3j3n"
+                      class="container-box cbox-708300-2"
+                    >
+                      <div
+                        data-v-8eb46620=""
+                        data-eid="416329"
+                        data-secondsdelay=""
+                        id="izlek"
+                        class="element-wrapper"
+                      >
+                        <div
+                          data-v-8eb46620=""
+                          id="416329"
+                          data-secondsdelay=""
+                          class="custom"
+                        >
+                          <div
+                            data-secondsdelay=""
+                            id="idmzk"
+                            class="custom-inner el-416329"
+                          >
+                            <div
+                              data-secondsdelay=""
+                              id="iwk3h"
+                              class="timer_container"
+                            >
+                              <div data-secondsdelay="" class="timer_item">
+                                <div
+                                  data-text="text"
+                                  data-secondsdelay=""
+                                  id="ie8gq"
+                                  class="timerNumber k_hour"
+                                >
+                                  02
+                                </div>
+                                <div
+                                  data-text="text"
+                                  data-secondsdelay=""
+                                  class="timerTxt"
+                                >
+                                  HRS
+                                </div>
+                              </div>
+                              <div
+                                data-text="text"
+                                data-secondsdelay=""
+                                class="timer_colon"
+                              >
+                                :
+                              </div>
+                              <div data-secondsdelay="" class="timer_item">
+                                <div
+                                  data-text="text"
+                                  data-secondsdelay=""
+                                  id="iuh5q"
+                                  class="timerNumber k_minute"
+                                >
+                                  00
+                                </div>
+                                <div
+                                  data-text="text"
+                                  data-secondsdelay=""
+                                  class="timerTxt"
+                                >
+                                  MIN
+                                </div>
+                              </div>
+                              <div
+                                data-text="text"
+                                data-secondsdelay=""
+                                class="timer_colon"
+                              >
+                                :
+                              </div>
+                              <div data-secondsdelay="" class="timer_item">
+                                <div
+                                  data-text="text"
+                                  data-secondsdelay=""
+                                  id="ira2v"
+                                  class="timerNumber k_seconds"
+                                >
+                                  07
+                                </div>
+                                <div
+                                  data-text="text"
+                                  data-secondsdelay=""
+                                  class="timerTxt"
+                                >
+                                  SEC
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+        
+   
+    <div
+      data-text="text"
+      id="bodyElementDummy"
+      data-secondsdelay=""
+      class="fk-web"
+    ></div>
 
 
-</body>
+ 
+ 
 
+  </body>
 </html>
